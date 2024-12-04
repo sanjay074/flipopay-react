@@ -80,7 +80,7 @@ const PayoutForm = () => {
 
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:8000/api/v1/payouts/initiate", {
+      const response = await axios.post("http://143.110.176.99:8000/api/v1/payouts/initiate", {
         ...formData,
         merchantID,
         affiliateID,
